@@ -1,0 +1,26 @@
+{
+	"extends": ["tslint:latest", "tslint-react"],
+	"rulesDirectory": "node_modules/tslint-eslint-rules/dist/rules",
+	"rules": {
+		"indent": [true, "tabs"],
+		"quotemark": [true, "single", "avoid-escape", "jsx-double"],
+		"eofline": false,
+		"no-var-requires": false,
+		"ordered-imports": [true, {"import-sources-order": "any", "named-imports-order": "any"}],
+		"trailing-comma": false,
+		"object-literal-sort-keys": false,
+		"only-arrow-functions": false,
+		"object-literal-shorthand": false,
+		"no-string-literal": false,
+		"no-unused-expression": false,
+		"jsx-no-multiline-js": false,
+		"arrow-parens": false,
+		"variable-name": [true, "allow-leading-underscore", "allow-pascal-case"],
+		"jsx-no-lambda": false,
+		"interface-over-type-literal": false,
+		"interface-name": false,
+		"no-empty-interface": false,
+		"max-line-length": false,
+		"no-console": true
+	}
+}

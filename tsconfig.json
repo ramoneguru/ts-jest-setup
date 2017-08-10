@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"outDir": "./dist/",
+		"sourceMap": false,
+		"jsx": "react",
+		"allowJs": true,
+		"preserveConstEnums": true,
+		"removeComments": true,
+		"noImplicitAny": false,
+		"noUnusedParameters": true
+	},
+	"include": [
+		"./src/**/*"
+	],
+	"filesGlob": [
+		"**/*.ts",
+		"**/*.tsx"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
