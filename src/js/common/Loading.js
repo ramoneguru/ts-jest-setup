@@ -29,8 +29,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Loading(props) {
 	return _react2.default.createElement(
 		'div',
-		null,
-		'hello'
+		{ className: 'row' },
+		_react2.default.createElement(
+			'div',
+			{ className: 'col-md-offset-11 col-md-2 text-center m-t-lg ' + props.classList },
+			_react2.default.createElement(
+				'div',
+				{ className: 'loading-text' },
+				props.text
+			),
+			_react2.default.createElement('i', { className: 'icon icon-spinner icon-spin icon-3x icon-fw margin-bottom' }),
+			_react2.default.createElement(
+				'span',
+				{ className: 'sr-only' },
+				'Loading...'
+			)
+		)
 	);
 }
 
