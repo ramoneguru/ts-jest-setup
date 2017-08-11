@@ -1,12 +1,18 @@
-import React from 'react';
-import './styles.less';
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+require('./styles.less');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
- * Standard Loading component for showing spinning icon animation
- *
- * Usage:
- *
- * import {Loading} from 'ui-components';
  *
  * render() (
  * 		// Return loading animation
@@ -21,26 +27,18 @@ import './styles.less';
  */
 
 function Loading(props) {
-	if (!props.when) {
-		return null;
-	}
-
-	return (
-		<div className="row">
-			<div className={'col-md-offset-11 col-md-2 text-center m-t-lg ' + props.classList}>
-				<div className="loading-text">{props.text}</div>
-				<i className="icon icon-spinner icon-spin icon-3x icon-fw margin-bottom"></i>
-				<span className="sr-only">Loading...</span>
-			</div>
-		</div>
+	return _react2.default.createElement(
+		'div',
+		null,
+		'hello'
 	);
 }
 
 Loading.propTypes = {
-	when: React.PropTypes.bool,
-	text: React.PropTypes.string,
-	style: React.PropTypes.object,
-	classList: React.PropTypes.string
+	when: _react2.default.PropTypes.bool,
+	text: _react2.default.PropTypes.string,
+	style: _react2.default.PropTypes.object,
+	classList: _react2.default.PropTypes.string
 };
 
 Loading.defaultProps = {
@@ -51,4 +49,4 @@ Loading.defaultProps = {
 
 Loading.displayName = 'Loading';
 
-export default Loading;
+exports.default = Loading;
